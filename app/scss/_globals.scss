@@ -1,0 +1,71 @@
+//Font family
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+//Colors
+$darkCyan: hsl(183, 100%, 15%);
+$darkGrayishCyan: hsl(186, 14%, 43%);
+$grayishCyan: hsl(184, 14%, 56%);
+$lightGrayishCyan: hsl(185, 41%, 84%);
+$lightCyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+$strongCyan: hsl(172, 67%, 45%);
+
+
+//Arrows Input fields
+//Chrome, Safari, Edge, Opera
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+//Mozilla Firefox
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+//Correct line height and prevent adjustment of font size 
+//after orientation changes in iOS
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 100%;
+ }
+
+ *, ::before, ::after {
+     box-sizing: border-box;
+ }
+
+ label {
+    font-size: 0.75rem;
+
+    @media screen and (min-width: 600px) {
+        font-size: 1rem;
+    }
+ }
+
+ p {
+    font-size: 9px; //12px for desktop
+    color: $lightGrayishCyan;
+
+    @media screen and (min-width: 600px) {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+
+ }
+
+//Correct inheritance & scaling of font size in all browsers
+//Correct odd 'em' font sizing in all browsers
+/*pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}*/

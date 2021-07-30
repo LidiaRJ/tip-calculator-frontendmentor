@@ -1,0 +1,230 @@
+html {
+    background-color: $lightGrayishCyan;
+}
+.main {
+    background-color: $lightGrayishCyan;
+}
+
+.main__logo {
+    padding: 1.875rem 8.75rem;
+
+    @media screen and (min-width: 600px) {
+        text-align: center
+        ;
+    }
+}
+
+//-----Calculator container-----//
+.calculator {
+    background-color: $white;
+    border-radius: 1.25rem;
+    padding: 2.1875rem 1.875rem;
+    margin: 0 auto 0 auto;
+}
+
+.calculator__content {
+
+    @media screen and (min-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+    }
+    
+}
+
+.col__1 {
+    @media screen and (min-width: 600px) {
+        
+    }
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.label__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: inline-block;
+    padding: 0.75rem;
+    font-weight: bold;
+    color: $darkGrayishCyan;
+}
+
+.warning {
+    display: block;
+    opacity: 0;
+    color: hsl(0, 48%, 47%);
+}
+
+.show__warning {
+    opacity: 1;
+}
+
+.tip__grid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tip__column {
+    //display: inline-block;
+    float: left;
+    width: 44%;
+    margin: 0 7.5px 15px 7.5px;
+
+    @media screen and (min-width: 600px) {
+        float: left;
+        width: 30%;
+        margin: 0 7.5px 15px 7.5px;
+    }
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+//---Type-in inputs---//
+.bill__amount {
+    background: $lightCyan url(/images/icon-dollar.svg) 20px no-repeat;
+}
+
+.num__people {
+    margin-bottom: 30px;
+    background: $lightCyan url(/images/icon-person.svg) 20px no-repeat;
+
+    @media screen and (min-width: 600px) {
+        margin-bottom: 0;
+    }
+}
+
+//---Inputs---//
+input[type=number], button[type=button], button[type=reset] {
+    border: none;
+    font-family: 'Space Mono', monospace;
+    resize: vertical; 
+}
+
+input[type=number] {
+    width: 100%;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 12px 20px 12px 40px;
+    text-align: right;
+    color: $darkCyan;
+    font-weight: 700;
+
+    &:focus {
+       outline: none;
+       border: 3px solid $strongCyan;
+       
+       
+    }
+}
+
+.tipBtn.active {
+    background-color: $strongCyan;
+}
+
+input.customTip {
+    font-size: 20px;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+button[type=button] {
+    width: 100%;
+    background-color: $darkCyan;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    color: $white;
+
+    &:focus {
+        background-color: $strongCyan;
+        color: $darkCyan;
+    }
+}
+
+button[type=reset] {
+    width: 98%;
+    padding: 0.75rem;
+    background-color: $strongCyan;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    color: $darkCyan;
+
+    @media screen and (min-width: 600px) {
+        margin-top: 90px;
+    }
+
+    &:focus {
+        background-color: $lightGrayishCyan;
+        color: $darkCyan;
+    }
+
+    &:disabled {
+        background-color: $darkGrayishCyan;
+    }
+}
+
+
+.col__2 {
+    background-color: $darkCyan;
+    border-radius: 20px;
+    padding: 44px 20px 25px 20px;
+
+    label {
+        color: $lightCyan;
+        padding: 0;
+    }
+}
+
+.results {
+    margin-bottom: 35px;
+}
+
+.col2__container {
+    display: flex;
+    margin-bottom: 30px;
+
+    .col2__text {
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+        text-align: left;
+        p {
+            margin-top: 5px;
+        }
+        
+    }
+    
+    .output__container {
+        margin: 0px auto;
+        margin-right: 0;
+        color: white; 
+        width: 50%;
+        text-align: right;
+    }
+    
+    output[type=number] {
+        color: $strongCyan;
+        font-weight: 700;
+        font-size: 42px;
+        
+    }
+}
+
+.attribution {
+    display: none;
+}

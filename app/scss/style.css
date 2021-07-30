@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  font-size: 100%;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 600px) {
+  label {
+    font-size: 1rem;
+  }
+}
+
+p {
+  font-size: 9px;
+  color: #c5e4e7;
+}
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+/*pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}*/
+html {
+  background-color: #c5e4e7;
+}
+
+.main {
+  background-color: #c5e4e7;
+}
+
+.main__logo {
+  padding: 1.875rem 8.75rem;
+}
+@media screen and (min-width: 600px) {
+  .main__logo {
+    text-align: center;
+  }
+}
+
+.calculator {
+  background-color: white;
+  border-radius: 1.25rem;
+  padding: 2.1875rem 1.875rem;
+  margin: 0 auto 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+  .calculator__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.label__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: inline-block;
+  padding: 0.75rem;
+  font-weight: bold;
+  color: #5e7a7d;
+}
+
+.warning {
+  display: block;
+  opacity: 0;
+  color: #b13e3e;
+}
+
+.show__warning {
+  opacity: 1;
+}
+
+.tip__grid {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tip__column {
+  float: left;
+  width: 44%;
+  margin: 0 7.5px 15px 7.5px;
+}
+@media screen and (min-width: 600px) {
+  .tip__column {
+    float: left;
+    width: 30%;
+    margin: 0 7.5px 15px 7.5px;
+  }
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bill__amount {
+  background: #f4fafa url(/images/icon-dollar.svg) 20px no-repeat;
+}
+
+.num__people {
+  margin-bottom: 30px;
+  background: #f4fafa url(/images/icon-person.svg) 20px no-repeat;
+}
+@media screen and (min-width: 600px) {
+  .num__people {
+    margin-bottom: 0;
+  }
+}
+
+input[type=number], button[type=button], button[type=reset] {
+  border: none;
+  font-family: "Space Mono", monospace;
+  resize: vertical;
+}
+
+input[type=number] {
+  width: 100%;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 12px 20px 12px 40px;
+  text-align: right;
+  color: #00494d;
+  font-weight: 700;
+}
+input[type=number]:focus {
+  outline: none;
+  border: 3px solid #26c0ab;
+}
+
+.tipBtn.active {
+  background-color: #26c0ab;
+}
+
+input.customTip {
+  font-size: 20px;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+button[type=button] {
+  width: 100%;
+  background-color: #00494d;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+button[type=button]:focus {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+button[type=reset] {
+  width: 98%;
+  padding: 0.75rem;
+  background-color: #26c0ab;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #00494d;
+}
+@media screen and (min-width: 600px) {
+  button[type=reset] {
+    margin-top: 90px;
+  }
+}
+button[type=reset]:focus {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+button[type=reset]:disabled {
+  background-color: #5e7a7d;
+}
+
+.col__2 {
+  background-color: #00494d;
+  border-radius: 20px;
+  padding: 44px 20px 25px 20px;
+}
+.col__2 label {
+  color: #f4fafa;
+  padding: 0;
+}
+
+.results {
+  margin-bottom: 35px;
+}
+
+.col2__container {
+  display: flex;
+  margin-bottom: 30px;
+}
+.col2__container .col2__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.col2__container .col2__text p {
+  margin-top: 5px;
+}
+.col2__container .output__container {
+  margin: 0px auto;
+  margin-right: 0;
+  color: white;
+  width: 50%;
+  text-align: right;
+}
+.col2__container output[type=number] {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.attribution {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/app/scss/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main"> <!--background color goes here-->
+    <div class="main__logo">
+      <img src="/images/logo.svg" alt="logo" class="logo">
+    </div>
+
+    <!--CALCULATOR CONTAINER-->
+    <div class="calculator">
+      <form id="form">
+        <div class="calculator__content">
+          <!--column 1-->
+          <div class="col__1">
+            <!--Row 1-->
+            <div class="row">
+              <div class="label__container">
+                <label for="bill-amount">Bill</label>
+              </div>
+
+              <div class="restult__box" id="bill__amount">
+                <input type="number" name="billAmount" placeholder="0" class="bill__amount">
+              </div>
+            </div>
+
+            <!--Row 2-->
+            <div class="row">
+              <div class="label__container">
+                <label>Select Tip %</label>
+              </div>
+              <div class="tip__grid">
+                <div class="tip__column">
+                  <button type="button" class="tipBtn" id="calculate" onclick="buttonSound()">5%</button>            
+                </div>
+                <div class="tip__column">
+                  <button type="button" class="tipBtn" onclick="buttonSound()">10%</button>
+                </div>
+                <div class="tip__column">
+                  <button type="button" class="tipBtn" onclick="buttonSound()">15%</button>
+                </div>
+                <div class="tip__column">
+                  <button type="button" class="tipBtn" onclick="buttonSound()">25%</button>
+                </div>
+                <div class="tip__column">
+                  <button type="button" class="tipBtn" onclick="buttonSound()">50%</button>
+                </div>
+                <div class="tip__column">
+                  <input type="number" name="tipAm" placeholder="Custom" class="customTip" onclick="buttonSound()">
+                </div>
+              </div>
+            </div>
+
+            <div class="people__container">
+              <div class="label__container">
+                <label for="persons">Number of People</label>
+                <label class="warning">Can't be zero</label>
+              </div>
+              
+              <div class="result__box" id="numPeople">
+                <input type="number" name="numPeople" placeholder="0" class="num__people" id="persons">
+              </div>
+            </div>
+          </div>
+
+          <!--column 2-->
+          <div class="col__2">
+            <div class="results">
+              <div class="col2__container">
+                <div class="col2__text">
+                  <label for='tip_output'>Tip Amount</label>
+                  <p>/ person</p>
+                </div>
+      
+                <div class="output__container">
+                  <output type="number" value='0' id="tip_output">$ 0.0</output>
+                </div>
+              </div>
+      
+              <div class="col2__container">
+                <div class="col2__text">
+                  <label for="total_amount">Total</label>
+                  <p>/ person</p>
+                </div>
+        
+                <div class="output__container">
+                  <output type="number" value="0" id="total_output" placeholder="$0.00">$ 0.0</output>
+                </div>
+              </div>
+            </div>
+            
+
+            <button type="reset" class="reset" onclick="buttonSound()">Reset</button>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lidia Jimeno</a>.
+  </div>
+
+  <script src="/app/js/app.js"></script>
+</body>
+</html>
