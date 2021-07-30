@@ -91,12 +91,12 @@ label {
 
 //---Type-in inputs---//
 .bill__amount {
-    background: $lightCyan url(/images/icon-dollar.svg) 20px no-repeat;
+    background: $lightCyan url("./images/icon-dollar.svg") 20px no-repeat;
 }
 
 .num__people {
     margin-bottom: 30px;
-    background: $lightCyan url(/images/icon-person.svg) 20px no-repeat;
+    background: $lightCyan url("./images/icon-person.svg") 20px no-repeat;
 
     @media screen and (min-width: 600px) {
         margin-bottom: 0;
