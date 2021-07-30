@@ -49,12 +49,6 @@ function handleclick(event) {
             }
             
         }
-
-        //Revove active class from tipBtn when resetBtn is clicked
-        if (resetBtn()) {
-            button.classList.remove('active')
-        }
-        
     })
 
     calculateTip()
@@ -97,10 +91,10 @@ function calculateTip() {
     if (personValue >= 1) {
         let tipFinal = (tipValue * billValue) / personValue
         let billFinal = (billValue / personValue ) + tipFinal
+        console.log(tipFinal)
 
         //Display outputs
         tipOutput.innerHTML = '$ ' + tipFinal.toFixed(2)
-        console.log(tipFinal)
         totalOutput.innerHTML = '$ ' + billFinal.toFixed(2)
    } 
 }
