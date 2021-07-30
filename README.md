@@ -31,12 +31,18 @@ I added a sound effect to the buttons in the app implementing a function in JS a
 
 ### Screenshot
 
-[![Desktop_version](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/desktop.jpg)](https://github.com/LidiaRJ/easy-bank-landing-page/blob/main/screenshots/desktop.jpg)
+[![Desktop](https://github.com/LidiaRJ/tip-calculator-frontendmentor/blob/main/screenshots/tip-calculator-.jpg)](https://github.com/LidiaRJ/tip-calculator-frontendmentor/blob/main/screenshots/tip-calculator-.jpg)
+
+[![Desktop_active](https://github.com/LidiaRJ/tip-calculator-frontendmentor/blob/main/screenshots/tip-calculator-active.jpg)](https://github.com/LidiaRJ/tip-calculator-frontendmentor/blob/main/screenshots/tip-calculator-active.jpg)
+
+[![Mobile](https://github.com/LidiaRJ/tip-calculator-frontendmentor/blob/main/screenshots/tip-calculator-mobile.jpg)](https://github.com/LidiaRJ/tip-calculator-frontendmentor/blob/main/screenshots/tip-calculator-mobile.jpg)
+
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/LidiaRJ/tip-calculator-frontendmentor)
+- Live Site URL: (https://lidiarj.github.io/tip-calculator-frontendmentor/)
 
 ## My process
 
